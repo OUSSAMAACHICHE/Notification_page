@@ -1,0 +1,218 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap'); */
+
+:root {
+	/* ### Primary */
+
+	--Red: hsl(1, 90%, 64%);
+	--Blue: hsl(219, 85%, 26%);
+
+	/* ### Neutral */
+
+	--White: hsl(0, 0%, 100%);
+	--Verylight-grayish-blue: hsl(210, 60%, 98%);
+	--Light-grayish-blue-1: hsl(211, 68%, 94%);
+	--Light-grayish-blue-2: hsl(205, 33%, 90%);
+	--Grayish-blue: hsl(219, 14%, 63%);
+	--Dark-grayish-blue: hsl(219, 12%, 42%);
+	--Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'MyFont';
+	src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: 'medium';
+	src: url('assets/fonts/static/PlusJakartaSans-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'extraBold';
+	src: url('assets/fonts/static/PlusJakartaSans-ExtraBold.ttf');
+}
+
+body {
+	font-family: 'MyFont';
+	background-color: var(--Verylight-grayish-blue);
+}
+
+p {
+	font-size: 16px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+@media (min-width: 768px) {
+	main {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		border-radius: 10px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 920px) {
+	main {
+		width: 75%;
+	}
+}
+
+@media (min-width: 1020px) {
+	main {
+		width: 60%;
+	}
+}
+	@media (min-width: 1290px) {
+		main {
+			width: 50%;
+		}
+	}
+
+	main {
+		padding: 20px;
+		background-color: var(--White);
+	}
+
+	.head-notification {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.head-notification h2 {
+		font-size: 1.3rem;
+		color: var(--Very-dark-blue);
+		font-family: 'extraBold';
+	}
+
+	#notify-count {
+		background-color: var(--Blue);
+		color: var(--White);
+		font-size: 1rem;
+		padding: 3px 10px;
+		border-radius: 6px;
+		margin-left: 10px;
+	}
+
+	#all-read {
+		border: none;
+		background-color: var(--White);
+		color: var(--Very-dark-blue);
+		cursor: pointer;
+		font-size: 1rem;
+	}
+
+	#all-read:hover {
+		color: var(--Blue);
+	}
+
+	/* End styling head S */
+	.notifications .notification {
+		padding: 15px;
+		border-radius: 10px;
+		margin: 10px 0;
+		display: flex;
+		align-items: flex-start;
+	}
+	.notifications .notification.active {
+		background-color: var(--Verylight-grayish-blue);
+	}
+
+	.notification img {
+		width: 40px;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+
+	.notification .title {
+		color: var(--Very-dark-blue);
+		font-family: 'extraBold';
+		margin-right: 5px;
+		cursor: pointer;
+	}
+
+	.notification .title:hover {
+		color: var(--Blue);
+	}
+
+	.notification p {
+		display: inline;
+		color: var(--Dark-grayish-blue);
+	}
+
+	.notification p .special {
+		color: var(--Very-dark-blue);
+	}
+
+	.notification p .special:hover {
+		cursor: pointer;
+		color: var(--Blue);
+	}
+
+	.notify-info a {
+		font-family: 'extraBold';
+		text-decoration: none;
+		color: var(--Very-dark-blue);
+	}
+
+	.notify-info a:hover {
+		color: var(--Blue);
+	}
+
+	.notify-info .date {
+		display: block;
+		color: var(--Grayish-blue);
+	}
+	.red-dot {
+		display: inline-block;
+		background-color: var(--Red);
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		margin-left: 5px;
+	}
+	.notify-info .msg {
+		border: 1px solid var(--Light-grayish-blue-2);
+		color: var(--Dark-grayish-blue);
+		padding: 15px;
+		margin-top: 10px;
+		border-radius: 5px;
+	}
+
+	.notify-info .msg:hover {
+		cursor: pointer;
+		background-color: var(--Light-grayish-blue-1);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}

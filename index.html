@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+  <main>
+    <div class="head-notification">
+      <h2>Notifications<span id="notify-count">3</span></h2>
+      <button id="all-read">Mark all as read</button>
+    </div>
+    <section class="notifications">
+      <div class="notification active">
+        <img src="assets/images/avatar-mark-webber.webp" alt="webber">
+        <div class="notify-info">
+          <span class="title">Mark Webber</span>
+          <p>reacted to your recent post <span class="special">My first tournament today!</span>
+            <span class="red-dot"></span></p>
+          <span class="date">1m ago</span>
+        </div>
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-angela-gray.webp" alt="Angela">
+        <div class="notify-info">
+          <span class="title">Angela Gray</span>
+          <p>followed you <span class="red-dot"></span></p>
+          <span class="date">5m ago</span>
+        </div>
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="Jacob">
+        <div class="notify-info">
+          <span class="title">Jacob Thompson</span>
+          <p>has joined your group  <a href="#">Chess Club</a> <span class="red-dot"></span></p>
+          <span class="date">1 day ago</span>
+        </div>
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky">
+        <div class="notify-info">
+          <span class="title">Rizky Hasanuddin</span>
+          <p>sent you a private message <span class="red-dot"></span></p>
+          <span class="date">5 days ago</span>
+          <div class="msg">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="Kimberly">
+          <div class="notify-info">
+            <span class="title">Kimberly Smith</span>
+            <p>commented on your picture <span class="red-dot"></span></p>
+            <span class="date">1 week ago</span>
+          </div>
+        <img src="assets/images/image-chess.webp" alt="chess_web">
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="Nathan">
+        <div class="notify-info">
+          <span class="title">Nathan Peterson</span>
+          <p>reacted to your recent post 5 end-game strategies to increase your win rate <span class="red-dot"></span></p>
+          <span class="date">2 weeks ago</span>
+        </div>
+      </div>
+
+      <div class="notification active">
+        <img src="assets/images/avatar-anna-kim.webp" alt="Anna Kim">
+        <div class="notify-info">
+          <span class="title">Anna Kim</span>
+          <p>left the group <a href="#"> Chess Club</a>
+          <span class="red-dot"></span></p>
+          <span class="date">2 weeks ago</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ouss_Ach</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
